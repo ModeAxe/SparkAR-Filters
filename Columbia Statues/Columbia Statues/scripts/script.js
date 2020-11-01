@@ -3,9 +3,9 @@ const Textures = require('Textures');
 const Patches = require('Patches');
 
 Promise.all([
-    Textures.findFirst('icon_1'),
-    Textures.findFirst('icon_2'),
-    Textures.findFirst('icon_3'),
+    Textures.findFirst('con 1'),
+    Textures.findFirst('con 2'),
+    //Textures.findFirst('icon_3'),
 ]).then(onReady);
 
 
@@ -13,7 +13,7 @@ function onReady(assets) {
 
     const texture0 = assets[0];
     const texture1 = assets[1];
-    const texture2 = assets[2];
+    //const texture2 = assets[2];
 
     const picker = NativeUI.picker;
 
@@ -27,7 +27,7 @@ function onReady(assets) {
       items: [
         {image_texture: texture0},
         {image_texture: texture1},
-        {image_texture: texture2}
+        //{image_texture: texture2}
       ]
 
     };
